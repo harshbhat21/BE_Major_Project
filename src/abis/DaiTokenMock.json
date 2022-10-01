@@ -1218,12 +1218,13 @@
         }
       },
       "links": {},
-      "address": "0xeF0f119041721d24D10dd42f70e8214CC929A301",
-      "transactionHash": "0xdbe0fe1f9b57d53df59d49e42e56dc6cec00147ea4a0366d8bbc1dddba1e28a5"
+      "address": "0x21c1dBCFAD4955c31A1878f0F9e4019C0361B1Ed",
+      "transactionHash": "0xcb9e95cea0ca23239ff110a54552031e1c0ccbdbcfc56a779faaffa42cb355bd"
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-10-01T10:29:15.621Z",
+  "updatedAt": "2022-10-01T10:31:34.954Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
