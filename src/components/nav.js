@@ -18,7 +18,7 @@ function nav() {
             <a class="nav-link" href="#">User Profile</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" href="/home#about-section">About us</a>
+            <a class="nav-link" href="#about-section">About us</a>
           </li> 
         </ul>
         <form class="d-flex" role="search">
