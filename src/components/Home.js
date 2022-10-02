@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import dailogo from '../dai-logo.png'
-function Home(ol) {
+function Home() {
   return (
-    <div style={{padding:"5rem"}}>HomEEe
-        <button>
-            <Link to={"/payment"}>
-                SEND
-            </Link>
-        </button>
+    <div class="d-flex justify-content-center">
+      <Link to={"/payment"}>
+        <button type="button" class="btn btn-outline-primary btn-lg fixed-centre">SEND</button>
+      </Link>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import daiLogo from '../dai-logo.png';
+import Rupee from '../dai-logo.png'
 import './App.css';
 import Web3 from 'web3';
 import DaiTokenMock from '../abis/DaiTokenMock.json'
@@ -63,7 +64,7 @@ class Transactions extends Component {
               <div className="row">
                 <main role="main" className="col-lg-12 d-flex text-center">
                   <div className="content mr-auto ml-auto" style={{ width: "500px" }}>
-                      <img src={daiLogo} width="150" />
+                      <img src={Rupee} width="150" />
                     {/* </a> */}
                     <h1>{this.state.balance} INR</h1>
                     <form onSubmit={(event) => {

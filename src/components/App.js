@@ -7,6 +7,7 @@ import Nav from './nav';
 import { BrowserRouter, Routes, Switch, Route } from "react-router-dom";
 import Home from './Home';
 import Transactions from './Transactions';
+import Transactionhist from './Transactionhist';
 
 class App extends Component {
 
@@ -15,8 +16,9 @@ class App extends Component {
         <BrowserRouter>
         <Nav/>
           <Routes>
-            <Route exact path="/" element={<Home ol={Nav}/>}/>
+            <Route exact path="/" element={<Home />}/>
             <Route path="/payment" element={<Transactions/>}/>
+            <Route path="/transactionhist" element={<Transactionhist ol={Nav}/>}/>
           </Routes>
         </BrowserRouter>
     );
