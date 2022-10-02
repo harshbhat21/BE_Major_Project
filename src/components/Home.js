@@ -7,9 +7,7 @@ function Home() {
     <div class="d-flex justify-content-center">
       <Link to={"/payment"}>
         <button type="button" class="btn btn-outline-primary btn-lg fixed-centre m-5">SEND</button>
-      </Link>
-      
-      
+      </Link>      
     </div>
   )
 }
