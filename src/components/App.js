@@ -18,7 +18,7 @@ class App extends Component {
           <Routes>
             <Route exact path="/" element={<Home />}/>
             <Route path="/payment" element={<Transactions/>}/>
-            <Route path="/transactionhist" element={<Transactionhist ol={Nav}/>}/>
+            <Route path="/transactionhist" element={<Transactionhist ol={Transactions}/>}/>
           </Routes>
         </BrowserRouter>
     );

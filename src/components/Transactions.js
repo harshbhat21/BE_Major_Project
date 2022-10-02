@@ -7,6 +7,8 @@ import DaiTokenMock from '../abis/DaiTokenMock.json'
 import Nav from './nav';
 import { BrowserRouter, Routes, Switch, Route } from "react-router-dom";
 import Home from './Home';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'
 class Transactions extends Component {
     async componentWillMount() {
       await this.loadWeb3()
@@ -93,24 +95,10 @@ class Transactions extends Component {
                       </div>
                       <button type="submit" className="btn btn-primary btn-block">Send</button>
                     </form>
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">Recipient</th>
-                          <th scope="col">value</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        { this.state.transactions.map((tx, key) => {
-                          return (
-                            <tr key={key} >
-                              <td>{tx.returnValues.to}</td>
-                              <td>{window.web3.utils.fromWei(tx.returnValues.value.toString(), 'Ether')}</td>
-                            </tr>
-                          )
-                        }) }
-                      </tbody>
-                    </table>
+                    <Link to={"/Transactionhist"} state={ {vare:this.state.transactions}}>
+                      <button type="button" class="btn btn-outline-primary btn-lg fixed-centre m-5">History</button>
+                    </Link>
+                    
                   </div>
                 </main>
               </div>

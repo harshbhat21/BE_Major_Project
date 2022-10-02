@@ -18,7 +18,7 @@ function nav() {
             <a class="nav-link" href="#">User Profile</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="/home#about-section">About us</a>
           </li> 
         </ul>
         <form class="d-flex" role="search">
@@ -26,8 +26,10 @@ function nav() {
           <button class="btn btn-outline-success" type="submit">Logout</button>
         </form>
      </div>
-     </div>
-  </nav></div>
+     </div> 
+
+  </nav>
+  </div>
   )
 }
 
